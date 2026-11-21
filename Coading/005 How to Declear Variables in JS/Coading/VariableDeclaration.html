@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>004: Variable Declaration</title>
+</head>
+<body>
+
+    <script>
+
+        //var: ব্যবহার করে Variable Declare করা হয়। এর Value পরিবর্তন করা যায় এবং একই Scope-এ পুনরায় Declare করা যায়।
+        var name = "Md Ashraful Islam";
+
+        //let: ব্যবহার করেও Variable Declare করা হয়। এর Value পরিবর্তন করা যায়, কিন্তু একই Scope-এ পুনরায় Declare করা যায় না।
+        let age = 22;
+
+        //const: ব্যবহার করে Constant Variable Declare করা হয়। একবার Value Assign করার পর সেই Variable-এ নতুন Value Assign করা যায় না।
+        const university = "City University";
+
+        // Display Output এই পদ্ধতি সহজ 
+        document.write("<h1>How to Declare Variables in JavaScript</h1>");
+
+        document.write("Name: " + name + "<br>");
+        document.write("Age: " + age + "<br>");
+        document.write("University: " + university);
+
+        /*    // Display Output
+            document.getElementById("output").innerHTML =
+            "Name: " + name + "<br>" +
+            "Age: " + age + "<br>" +
+            "University: " + university;     */
+
+    </script>
+
+</body>
+</html>

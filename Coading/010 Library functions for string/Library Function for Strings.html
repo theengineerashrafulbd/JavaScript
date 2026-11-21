@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Library Function for Strings</title>
+    </head>
+    <body>
+        
+        <script>
+
+            var text = "Bangladesh";
+
+            var len = text.length;  // text variable Bangladesh এর length বের করা
+
+            document.write("Number of Character = " + len + "<br/>");
+
+            var text2 = "Sadia Mim Choya";
+
+            document.write("Number of Character2 = " + text2.length + "<br/>");  // একবারে কাজ করা হয়েছে
+
+
+            // User থেকে input নেওয়া
+            var text3 = prompt("Enter Your Name: ");
+
+            document.write("Character text3 is = " + text3.length + "<br/>");
+
+            //section for text...
+            document.write(text.charAt(6) + "<br/>");
+
+            text4 = text.toUpperCase();
+            text5 = text.toLowerCase();
+
+            document.write(text4 + "<br/>");
+            document.write(text5 + "<br/>");
+
+            var text6 = "Bangladesh ";
+            var text7 = "is a beautiful country"
+            document.write(text6.concat(text7) + "<br/>");
+
+            //slice(0, 3) এর কাজ কেটে নেওয়া। এখানে (0, 3) বলতে বোঝায় 0 number index থেকে 3 টা Strings output এ দেখাবে 
+            var text8 = text6.slice(0, 3); 
+            document.write(text8);
+
+        </script>
+
+    </body>
+</html>

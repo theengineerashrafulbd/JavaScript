@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Library Function for Strings</title>
+    </head>
+    <body>
+        
+        <script>
+
+            //get first name from user
+            var firstName = prompt("Enter Your First Name: ");
+
+            // get last name from user
+            var lastName = prompt("Enter Your Last Name: ");
+
+            // add fullName without using library function
+            var fullName = firstName + " " + lastName;
+
+            // print full name
+            document.write("Full Name = " + fullName + "<br/>");
+
+            // total length of full name
+            document.write("Total Length = " + fullName.length + "<br/>");
+
+            // convert full name into uppercase
+            document.write("Uppercase Name = " + fullName.toUpperCase() + "<br/>");
+
+            // print the 2nd position from full name
+            document.write("2nd Position = " + fullName.charAt(1));
+
+        </script>
+
+    </body>
+</html>

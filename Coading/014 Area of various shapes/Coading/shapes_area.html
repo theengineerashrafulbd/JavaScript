@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>14.1: Calculate Area</title>
+    </head>
+    <body>
+
+        <h2>Calculate Area</h2>
+
+        <p id="output"> </p>
+
+        <script>
+            var base = parseFloat(prompt("Enter base: "));  //এখানে Int, Float number দুইটাই input নেওয়া যাবে
+            var height = parseFloat(prompt("Enter height: "));
+
+            var area = base * height;
+
+            //document.write("Area = " + area);
+
+            document.getElementById('output').textContent = "Area = " + area;
+
+            //<script src="shape_area.ja"> <script/>
+        </script>
+
+    </body>
+</html>

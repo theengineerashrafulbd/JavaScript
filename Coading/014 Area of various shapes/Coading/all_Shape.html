@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>14.3: All Area Calculate</title>
+    </head>
+    <body>
+
+        <h2>Calculate Area of 2D Shapes</h2>
+
+        <p id="output"> </p>
+
+        <script>
+
+            var choice = parseInt(prompt(
+                "Choose a Shape:\n" +
+                "1. Triangle\n" +
+                "2. Equilateral Triangle\n" +
+                "3. Isosceles Triangle\n" +
+                "4. Right Triangle\n" +
+                "5. Circle\n" +
+                "6. Sector\n" +
+                "7. Semicircle\n" +
+                "8. Parallelogram\n" +
+                "9. Rhomboid\n" +
+                "10. Trapezium"
+            ));
+
+            var area;
+
+            switch (choice) {
+
+                // 1. Triangle
+                case 1:
+                    var base = parseFloat(prompt("Enter base: "));
+                    var height = parseFloat(prompt("Enter height: "));
+
+                    area = 0.5 * base * height;
+                    break;
+
+                // 2. Equilateral Triangle
+                case 2:
+                    var a = parseFloat(prompt("Enter side length: "));
+
+                    area = (Math.sqrt(3) / 4) * a * a;
+                    break;
+
+                // 3. Isosceles Triangle
+                case 3:
+                    var base = parseFloat(prompt("Enter base: "));
+                    var height = parseFloat(prompt("Enter height: "));
+
+                    area = 0.5 * base * height;
+                    break;
+
+                // 4. Right Triangle
+                case 4:
+                    var a = parseFloat(prompt("Enter first perpendicular side: "));
+                    var b = parseFloat(prompt("Enter second perpendicular side: "));
+
+                    area = 0.5 * a * b;
+                    break;
+
+                // 5. Circle
+                case 5:
+                    var r = parseFloat(prompt("Enter radius: "));
+
+                    area = Math.PI * r * r;
+                    break;
+
+                // 6. Sector
+                case 6:
+                    var r = parseFloat(prompt("Enter radius: "));
+                    var theta = parseFloat(prompt("Enter angle in degrees: "));
+
+                    area = (theta / 360) * Math.PI * r * r;
+                    break;
+
+                // 7. Semicircle
+                case 7:
+                    var r = parseFloat(prompt("Enter radius: "));
+
+                    area = 0.5 * Math.PI * r * r;
+                    break;
+
+                // 8. Parallelogram
+                case 8:
+                    var base = parseFloat(prompt("Enter base: "));
+                    var height = parseFloat(prompt("Enter height: "));
+
+                    area = base * height;
+                    break;
+
+                // 9. Rhomboid
+                case 9:
+                    var base = parseFloat(prompt("Enter base: "));
+                    var height = parseFloat(prompt("Enter height: "));
+
+                    area = base * height;
+                    break;
+
+                // 10. Trapezium
+                case 10:
+                    var a = parseFloat(prompt("Enter first parallel side: "));
+                    var b = parseFloat(prompt("Enter second parallel side: "));
+                    var height = parseFloat(prompt("Enter height: "));
+
+                    area = 0.5 * (a + b) * height;
+                    break;
+
+                default:
+                    document.getElementById("output").textContent =
+                        "Invalid Choice!";
+            }
+
+            if (choice >= 1 && choice <= 10) {
+                document.getElementById("output").textContent =
+                    "Area = " + area;
+            }
+
+        </script>
+
+    </body>
+</html>

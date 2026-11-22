@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>013.2: Calculator</title>
+    </head>
+    <body>
+        
+        <script>
+
+            var num1 = prompt("Enter First Number : ");  // এখানে String input হবে
+            var num2 = prompt("Enter Second Number : ");
+
+            num1 = parseInt(num1, 10);  // String  কে Int এ convert করবে এবং 10 base এ নিয়ে যাবে অর্থাৎ দশমিকে নিয়ে যাবে 
+            num2 = parseInt(num2, 10);  // এখানে parseFloat() ও নেওয়া যাবে
+
+            var sum, sub;
+
+            sum = num1 + num2;
+            document.write("Addition = " + sum + "<br/>");
+
+
+            sub = num1 - num2;
+            document.write("subtraction = " + sub);
+
+        </script>
+
+    </body>
+</html>

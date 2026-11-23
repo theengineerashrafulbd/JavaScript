@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vowel Consonent Check</title>
+    </head>
+    <body>
+        
+
+        <script>
+
+            //
+                var letter = prompt("Enter a letter: ");
+
+                letter = letter.toLowerCase(); //User upperCase দিলেও এটা LowerCasec এ convert করবে যার ফলে UpperCase এর জন্য আলাদা করে condition লেখা লাগবে না
+
+                if (letter=="a" || letter=="e" || letter=="i" || letter=="o" || letter=="u"){
+                    document.write(letter + " is a Vowel");
+                }
+
+                else
+                    document.write(letter + " is a Consonent");
+
+        </script>
+    </body>
+</html>

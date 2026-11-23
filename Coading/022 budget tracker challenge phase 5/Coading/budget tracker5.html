@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>22.1: Personal Budget Tracker 5</title>
+    </head>
+    <body>
+        
+
+
+        <script>
+
+            /*
+            📌 Personal Budget Tracker
+
+            Challenge Requirements:
+            1. Use if, else and relational operators.
+            2. Categorize financial status based on savings.
+            3. Check whether the user is overspending.
+            */
+
+            // User Information
+            var userName = "Ashraful Islam";
+
+            // Financial Information
+            var totalIncome = 5000;
+            var totalExpenses = 2300;
+
+            // Calculate Tax (10%)
+            var tax = totalIncome * 10 / 100;
+
+            // Calculate Net Income After Tax
+            var netIncome = totalIncome - tax;
+
+            // Calculate Remaining Balance
+            var balance = netIncome - totalExpenses;
+
+            // Calculate Savings (20% of Balance)
+            var savings = balance * 20 / 100;
+
+
+            // Display Personal Budget Tracker
+            console.log("📊 Personal Budget Tracker");
+            console.log("🧑‍⚕️ User: " + userName);
+
+            console.log("💰 Total Income: $" + totalIncome);
+            console.log("💸 Total Expenses: $" + totalExpenses);
+            console.log("📉 Tax Deducted (10%): $" + tax);
+            console.log("💲 Net Income After Tax: $" + netIncome);
+            console.log("🟢 Remaining Balance: $" + balance);
+            console.log("💾 Savings (20% of balance): $" + savings);
+
+
+            // Financial Health Status Based on Savings
+            if (savings >= 1000) {
+                console.log("Excellent: Your financial status is excellent!");
+            }
+            else if (savings >= 500 && savings <= 999) {
+                console.log("Good: Your financial status is good!");
+            }
+            else if (savings >= 100 && savings <= 499) {
+                console.log("Needs Improvement: Try to increase your savings.");
+            }
+            else {
+                console.log("Critical: Your savings are too low!");
+            }
+
+
+            // Check Overspending
+            if (totalExpenses > totalIncome) {
+                console.log("⚠ Warning: You are spending more than your income!");
+            }
+            else {
+                console.log("You are not overspending.");
+            }
+
+
+        </script>
+    </body>
+</html>

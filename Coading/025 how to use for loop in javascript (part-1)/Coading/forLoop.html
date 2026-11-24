@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>25.1: for Loop in JavaScript</title>
+    </head>
+    <body>
+        
+
+        <script>
+
+            //Bangladesh print
+            for(var x = 1 ; x <= 10; x++){
+                document.write("Bangladesh <br>");
+            }
+
+            // Line Break: দুইটা Loop এর output এর মাঝে space
+            document.write("<br><br>");
+
+            //1 to 100 print
+            for(var x = 1 ; x <= 100; x++){
+                document.write(" " + x);  //এখানে break দিলে output কলাম(খাড়া) বরাবর চলে যাবে 
+            }
+
+            // Line Break: দুইটা Loop এর output এর মাঝে space
+            document.write("<br><br>");
+
+            //1 to 99 odd number print
+            for(var x = 1 ; x <= 99; x = x + 2){
+                document.write(" " + x);
+            }
+
+            document.write("<br><br>");
+
+            //2 to 100 Even number print
+            for(var x = 2 ; x <= 100; x = x + 2){
+                document.write(" " + x);
+            }
+
+            document.write("<br><br>");
+
+            //10 to 1 number print
+            for(var x = 10 ; x >= 1; x = x - 1){
+                document.write(" " + x);
+            }
+
+        </script>
+    </body>
+</html>

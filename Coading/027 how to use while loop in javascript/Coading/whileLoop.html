@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>27.1: While Loop</title>
+    </head>
+    <body>
+
+        <script>
+
+            /*
+            // Compare করার জন্য for loop use করা হয়েছে
+            for (var i = 1; i <= 100; i++) {
+                //document.write(i + "<br>");
+                document.write(i + " ");
+            }
+            */
+        
+            //while loop: 1 to 100 number print
+            var i = 1;  //while loop এ variables, initial value আগেই দিতে হবে
+            while(i <= 100){   //while এর ভিতরে শুধু condition দিতে হবে
+                document.write(" " + i);
+                i++;  //update part print এর পরে দিতে হবে। i = i + 1  ei vabeo dewa jabe but পুরা while এর function same হবে 
+            }
+
+
+            /*
+            //while loop: 1 + 2 + 3 + ...... + 10 = ?
+            var i = 1;
+            var sum = 0;
+
+            while (i <= 10) {
+                sum = sum + i;
+                i = i + 1;
+            }
+
+            document.write(sum);
+            */
+
+
+            /*
+            //while loop: 2 + 4 + 6 + ...... + 100 = ?
+            var i = 2;
+            var sum = 0;
+
+            while (i <= 100) {
+                sum = sum + i;
+                i = i + 2;
+            }
+
+            document.write(sum);
+            document.write("<h1>end</h1>");
+            */
+
+        </script>
+    </body>
+</html>

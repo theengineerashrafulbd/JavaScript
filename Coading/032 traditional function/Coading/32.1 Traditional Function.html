@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Traditional Funtion</title>
+    </head>
+    <body>
+        
+
+
+        <script>
+
+            /*
+            //use normal way, without function
+            var num = 5;
+            var result = num * num;
+            document.write("Result = " + result + "<br>");
+
+            var num = 6;
+            var result = num * num;
+            document.write("Result = " + result + "<br>");
+
+            var num = 7;
+            var result = num * num;
+            document.write("Result = " + result + "<br>");
+            */
+
+
+            /*
+            //using function: code এর একাধিক line বা বড় অংশকে বারবার use করার জন্য function use করা হয়
+            function square(){
+                var num = 5;
+                var result = num * num;
+                document.write("Result = " + result + "<br>");
+            }
+
+            //calling the square function
+            square();
+            */
+
+
+
+            // Function 3: Square
+            function square(num) {
+                var result = num * num;
+                document.write("Square Result: " + result + "<br>"); 
+            }
+            square(5);
+            square(6);
+            square(7);
+
+
+            //line break within two function
+            document.write("<br>");
+
+            // Practice 4: Multiplication
+            function multiply(num1, num2) {
+                var result = num1 * num2;
+                document.write("Multiply Result: " + result + "<br>");
+            }
+            multiply(5, 6);
+            multiply(6, 7);
+            multiply(7, 8);
+
+
+            document.write("<br>");
+
+
+            //practise 5: using return 
+            function divide(num5, num6){
+                var result5 = num5 / num6;
+                return result5;
+            }
+            //calling function
+            document.write("Divide result: " + divide(10, 2));
+
+            /*
+            //calling function using in diffrent ways (Source: from practise 5)
+            var x = divide(10, 2);
+            document.write(x);
+            */
+
+        </script>
+    </body>
+</html>

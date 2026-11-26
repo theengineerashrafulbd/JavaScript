@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>33.2: Function Expression</title>
+    </head>
+    <body>
+        
+
+
+        <script>
+
+            //Part 1: Immediately Invokeable
+
+            //Immediately Invokeable Function Expression: 1
+            /*
+            IIFEs (Immediately Invokeable Function Expressions)
+
+            (function display(message) {
+               console.log(message);
+             })('hi');
+
+            */
+
+
+            //Immediately Invokeable Function Expression: 2
+            /*
+            // IIFEs (Immediately Invokeable Function Expressions)
+
+             (function display(message) {
+                 console.log(message);
+             })('hi');
+             */
+
+
+
+
+
+            //Part 2: Function Expression
+
+            // Function Expression: 3
+            var display = function() {
+                console.log("Hello World");
+            };
+
+            display();      
+
+
+
+
+            // Function Expression: 4
+            /*
+            var display2 = function displayMessage(msg) {
+                console.log(msg);
+            };
+
+            display2("I am message");
+            */
+
+
+
+
+             // Function Expression: 5
+            /*const display2 = function displayMessage() {
+                console.log("hi i am message");
+            };
+
+            display2();
+            */
+
+        </script>
+    </body>
+</html>

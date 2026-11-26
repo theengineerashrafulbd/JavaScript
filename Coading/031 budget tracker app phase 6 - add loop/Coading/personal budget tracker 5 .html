@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Budget Tracker</title>
+</head>
+<body>
+
+    <script>
+
+        // Personal Budget Tracker: Phase 6 - Loop Control Statement
+
+        let name = prompt("Enter your name:");
+
+        // 2.Input total income with validation
+        let income;
+        income = parseFloat(prompt("Enter your total income:"));
+
+        while (true) {
+
+            if (income > 0 && Number.isFinite(income)) {
+                break;
+            } else {
+                alert("Invalid income! Please enter a valid amount.");
+            }
+        }
+
+        // 3. Collect 4 expenses using a loop
+        let totalExpenses = 0;
+
+        for (let i = 1; i <= 4; i++) {
+
+            let expense;
+
+            while (true) {
+                expense = Number(prompt("Enter expense " + i + ":"));
+
+                if (expense >= 0 && Number.isFinite(expense)) {
+                    break;
+                } else {
+                    alert("Invalid expense! Please enter a valid amount.");
+                }
+            }
+
+            totalExpenses += expense;
+        }
+
+        // 4. Calculate tax (10%)
+        let tax = income * 0.10;
+
+        // 5. Calculate net income after tax
+        let netIncome = income - tax;
+
+        // 6. Calculate remaining balance
+        let balance = netIncome - totalExpenses;
+
+        // 7. Calculate savings (20% of positive balance)
+        let savings = balance > 0 ? balance * 0.20 : 0;
+
+        // 8. Determine financial status
+        let financialStatus;
+
+        if (balance < 0) {
+            financialStatus = "Overspending";
+        }
+        else if (balance === 0) {
+            financialStatus = "No Balance Remaining";
+        }
+        else if (savings >= 1000) {
+            financialStatus = "Good Financial Condition";
+        }
+        else {
+            financialStatus = "Average Financial Condition";
+        }
+
+        // 9. Display results on the webpage
+        document.write("<h1>Personal Budget Tracker</h1>");
+
+        document.write("<h3>User: " + name + "</h3>");
+
+        document.write("<p>Total Income: $" + income + "</p>");
+
+        document.write("<p>Total Expenses: $" + totalExpenses + "</p>");
+
+        document.write("<p>Tax Deducted (10%): $" + tax + "</p>");
+
+        document.write("<p>Net Income After Tax: $" + netIncome + "</p>");
+
+        document.write("<p>Remaining Balance: $" + balance + "</p>");
+
+        document.write("<p>Savings (20%): $" + savings + "</p>");
+
+        document.write("<h3>Financial Status: " + financialStatus + "</h3>");
+
+    </script>
+
+</body>
+</html>
